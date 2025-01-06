@@ -61,7 +61,7 @@
     <p>- Foi aplicada a ferramenta <em>Dissolve</em> para manter apenas as áreas rurais.</p>
 
     <h3>2. Recorte por Municípios Operados pela Sabesp</h3>
-    <p>- As áreas rurais foram filtradas para selecionar somente os municípios operados pela Sabesp.</p>
+    <p>- As áreas rurais foram recortadas para selecionar somente os municípios operados pela Sabesp.</p>
 
     <h3>3. Extração de Vetores das Edificações</h3>
     <p>- Foi utilizado o Open Footprint Dataset no Google Earth Engine (GEE) para vetorizar as edificações nas áreas rurais atendidas pela Sabesp.</p>
@@ -70,16 +70,16 @@
     <p>- Os centroides das edificações foram calculados utilizando QGIS ou ARCGIS Pro para análises espaciais.</p>
 
     <h3>5. Mapas de Kernel</h3>
-    <p>- Mapas de Kernel foram gerados para criar mapas de calor, identificando áreas mais densamente povoadas.</p>
+    <p>- Mapas de Kernel foram gerados para criar mapas de calor, utilizando uma paleta de cores que vai de frias a quentes. identificando áreas mais densamente povoadas.</p>
 
     <h3>6. Vetorização de Dados Contínuos</h3>
-    <p>- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.</p>
+    <p>- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.As imagens raster dos mapas de kernel possuem dados contínuos, e o processo de vetorização de um raster exige que esses dados sejam transformados em dados discretos. O procedimento é similar à construção de curvas de nível, com a diferença de que, em vez de determinarmos cotas de vale e topo de morro, enfoca-se em áreas mais adensadas.</p>
 
     <h3>7. Identificação de Áreas Alvo</h3>
     <p>- Áreas com classificação próxima a 10 foram identificadas como zonas rurais densamente povoadas, prioritárias para a universalização do saneamento.</p>
 
     <h3>8. Delimitação de Áreas</h3>
-    <p>- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento.</p>
+    <p>- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento. A partir da seleção das áreas mais adensada pode-se estabelecer mais uma etapa para criar uma envoltória convexa ou caixa delimitadora, a fim de determinar uma área mínima de vários fragmentos.</p>
 <h2>Imagens do Processo</h2>
 
     <h3>Figura 1: Vetorização inicial das edificações rurais</h3>
