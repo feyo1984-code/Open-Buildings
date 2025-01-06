@@ -41,9 +41,9 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhar à Direita</title>
+
     <style>
-        .text-right {
+        .text-left {
             text-align: left;
         }
     </style>
@@ -55,30 +55,30 @@
 
     <p>A seguir, descrevemos a metodologia utilizada para gerar os mapas de Kernel e identificar as áreas rurais mais densamente povoadas:</p>
 
-    <h1>1. Criação das ROIs (Regiões de Interesse)</h1>
+    <h3>1. Criação das ROIs (Regiões de Interesse)</h3>
     <p>- As camadas do Estado de São Paulo foram obtidas em formato Shapefile a partir do Sistema Nacional de Cadastro Ambiental Rural (SICAR).</p>
     <p>- As áreas urbanas foram removidas utilizando a operação de Diferença Simétrica em ferramentas como QGIS ou ARCGIS Pro.</p>
     <p>- Foi aplicada a ferramenta <em>Dissolve</em> para manter apenas as áreas rurais.</p>
 
-    <h1>2. Recorte por Municípios Operados pela Sabesp</h1>
+    <h3>2. Recorte por Municípios Operados pela Sabesp</h3>
     <p>- As áreas rurais foram filtradas para selecionar somente os municípios operados pela Sabesp.</p>
 
-    <h1>3. Extração de Vetores das Edificações</h1>
+    <h3>3. Extração de Vetores das Edificações</h3>
     <p>- Foi utilizado o Open Footprint Dataset no Google Earth Engine (GEE) para vetorizar as edificações nas áreas rurais atendidas pela Sabesp.</p>
 
-    <h1>4. Centralização das Edificações</h1>
+    <h3>4. Centralização das Edificações</h3>
     <p>- Os centroides das edificações foram calculados utilizando QGIS ou ARCGIS Pro para análises espaciais.</p>
 
-    <h1>5. Mapas de Kernel</h1>
+    <h3>5. Mapas de Kernel</h3>
     <p>- Mapas de Kernel foram gerados para criar mapas de calor, identificando áreas mais densamente povoadas.</p>
 
-    <h1>6. Vetorização de Dados Contínuos</h1>
+    <h3>6. Vetorização de Dados Contínuos</h3>
     <p>- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.</p>
 
-    <h1>7. Identificação de Áreas Alvo</h1>
+    <h3>7. Identificação de Áreas Alvo</h3>
     <p>- Áreas com classificação próxima a 10 foram identificadas como zonas rurais densamente povoadas, prioritárias para a universalização do saneamento.</p>
 
-    <h1>8. Delimitação de Áreas</h1>
+    <h3>8. Delimitação de Áreas</h3>
     <p>- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento.</p>
 <h2>Imagens do Processo</h2>
 
