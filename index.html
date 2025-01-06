@@ -38,40 +38,39 @@
 </head>
 <body>
     <h1>Adensamento das Áreas Rurais nos Municípios Operados Pela Sabesp</h1>
-    <p># Mapas de Kernel - Municípios Operados pela Sabesp
-
-Este repositório contém os dados e a metodologia utilizada para criar mapas de Kernel para identificar áreas rurais adensadas no Estado de São Paulo, com foco nos municípios atendidos pela Companhia de Saneamento do Estado de São Paulo (Sabesp).<h1>
+    <p>Este repositório contém os dados e a metodologia utilizada para criar mapas de Kernel para identificar áreas rurais adensadas no Estado de São Paulo, com foco nos municípios atendidos pela Companhia de Saneamento do Estado de São Paulo (Sabesp).</p>
 
 <h1>Metodologia<h1>
 
-<h1>A seguir, descrevemos a metodologia utilizada para gerar os mapas de Kernel e identificar as áreas rurais mais densamente povoadas:
+<p>A seguir, descrevemos a metodologia utilizada para gerar os mapas de Kernel e identificar as áreas rurais mais densamente povoadas:</p>
 
 <h2>1. Criação das ROIs (Regiões de Interesse)<h2>
 
-- As camadas do Estado de São Paulo foram obtidas em formato Shapefile a partir do Sistema Nacional de Cadastro Ambiental Rural (SICAR).
+<p>- As camadas do Estado de São Paulo foram obtidas em formato Shapefile a partir do Sistema Nacional de Cadastro Ambiental Rural (SICAR).
 - As áreas urbanas foram removidas utilizando a operação de Diferença Simétrica em ferramentas como QGIS ou ARCGIS Pro.
-- Foi aplicada a ferramenta *Dissolve* para manter apenas as áreas rurais.
+- Foi aplicada a ferramenta *Dissolve* para manter apenas as áreas rurais.</p>
 
 <h2>2. Recorte por Municípios Operados pela Sabesp<h2>
-- As áreas rurais foram filtradas para selecionar somente os municípios operados pela Sabesp.
+<p>- As áreas rurais foram filtradas para selecionar somente os municípios operados pela Sabesp.</p>
 
 <h2>3. Extração de Vetores das Edificações<h2>
-- Foi utilizado o Open Footprint Dataset no Google Earth Engine (GEE) para vetorizar as edificações nas áreas rurais atendidas pela Sabesp.
+<p>- Foi utilizado o Open Footprint Dataset no Google Earth Engine (GEE) para vetorizar as edificações nas áreas rurais atendidas pela Sabesp.</p>
 
 <h2>4. Centralização das Edificações<h2>
-- Os centroides das edificações foram calculados utilizando QGIS ou ARCGIS Pro para análises espaciais.
+<p>- Os centroides das edificações foram calculados utilizando QGIS ou ARCGIS Pro para análises espaciais.</p>
 
 <h2>5. Mapas de Kernel<h2>
-- Mapas de Kernel foram gerados para criar mapas de calor, identificando áreas mais densamente povoadas.
+<p>- Mapas de Kernel foram gerados para criar mapas de calor, identificando áreas mais densamente povoadas.</p>
 
 <h2>6. Vetorização de Dados Contínuos<h2>
-- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.
+<p>- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.</p>
 
 <h2>7. Identificação de Áreas Alvo<h2>
-- Áreas com classificação próxima a 10 foram identificadas como zonas rurais densamente povoadas, prioritárias para a universalização do saneamento.
+<p>- Áreas com classificação próxima a 10 foram identificadas como zonas rurais densamente povoadas, prioritárias para a universalização do saneamento.</p>
+
 
 <h2>8. Delimitação de Áreas<h2>
-- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento.
+<p>- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento.
 .</p>
 
 
