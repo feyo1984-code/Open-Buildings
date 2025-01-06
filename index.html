@@ -44,30 +44,30 @@
 
     <p>A seguir, descrevemos a metodologia utilizada para gerar os mapas de Kernel e identificar as áreas rurais mais densamente povoadas:</p>
 
-    <h2>1. Criação das ROIs (Regiões de Interesse)</h2>
+    <h1>1. Criação das ROIs (Regiões de Interesse)</h1>
     <p>- As camadas do Estado de São Paulo foram obtidas em formato Shapefile a partir do Sistema Nacional de Cadastro Ambiental Rural (SICAR).</p>
     <p>- As áreas urbanas foram removidas utilizando a operação de Diferença Simétrica em ferramentas como QGIS ou ARCGIS Pro.</p>
     <p>- Foi aplicada a ferramenta <em>Dissolve</em> para manter apenas as áreas rurais.</p>
 
-    <h2>2. Recorte por Municípios Operados pela Sabesp</h2>
+    <h1>2. Recorte por Municípios Operados pela Sabesp</h1>
     <p>- As áreas rurais foram filtradas para selecionar somente os municípios operados pela Sabesp.</p>
 
-    <h2>3. Extração de Vetores das Edificações</h2>
+    <h1>3. Extração de Vetores das Edificações</h1>
     <p>- Foi utilizado o Open Footprint Dataset no Google Earth Engine (GEE) para vetorizar as edificações nas áreas rurais atendidas pela Sabesp.</p>
 
-    <h2>4. Centralização das Edificações</h2>
+    <h1>4. Centralização das Edificações</h1>
     <p>- Os centroides das edificações foram calculados utilizando QGIS ou ARCGIS Pro para análises espaciais.</p>
 
-    <h2>5. Mapas de Kernel</h2>
+    <h1>5. Mapas de Kernel</h1>
     <p>- Mapas de Kernel foram gerados para criar mapas de calor, identificando áreas mais densamente povoadas.</p>
 
-    <h2>6. Vetorização de Dados Contínuos</h2>
+    <h1>6. Vetorização de Dados Contínuos</h1>
     <p>- Os dados contínuos dos mapas de Kernel foram transformados em dados discretos para permitir a classificação das áreas.</p>
 
-    <h2>7. Identificação de Áreas Alvo</h2>
+    <h1>7. Identificação de Áreas Alvo</h1>
     <p>- Áreas com classificação próxima a 10 foram identificadas como zonas rurais densamente povoadas, prioritárias para a universalização do saneamento.</p>
 
-    <h2>8. Delimitação de Áreas</h2>
+    <h1>8. Delimitação de Áreas</h1>
     <p>- A Sabesp pode utilizar as classes-alvo para definir as zonas prioritárias para a implantação de projetos de saneamento.</p>
 
 
